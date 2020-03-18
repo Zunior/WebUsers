@@ -24,10 +24,13 @@
 	<c:set value="${pageContext.request.contextPath}" var="contextPath"></c:set>
 	<c:url var="loginURL" value="/application/logout" />
 
-	<div>Login user: <c:out value="${currentUser.getName()}" /></div>
-	<div>
-		<a href="<c:out value="${loginURL}" />">Logout</a>
-	</div>
+	<div>Login user: <c:out value="${currentUser.getName() == null ? 'N/A' : currentUser.getName()}" /></div>
+	<c:if test = "${not empty currentUser}" >
+		<div>
+			<a href="<c:out value="${loginURL}" />">Logout</a>
+		</div>
+	</c:if>
+	
 	<div id="linija">====================================</div>
 
 </body>
