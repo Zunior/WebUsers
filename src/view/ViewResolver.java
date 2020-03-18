@@ -22,6 +22,7 @@ public class ViewResolver {
 				put(ViewConstants.EDIT_USER, PageConstants.PAGE_EDIT_USER);
 				put(ViewConstants.HOME, PageConstants.PAGE_HOME);
 				put(ViewConstants.LIST_USER, PageConstants.PAGE_LIST_USER);
+				put(ViewConstants.LISTALL_USER, PageConstants.PAGE_LISTALL_USER);
 				
 			}};
 		}

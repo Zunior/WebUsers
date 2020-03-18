@@ -5,6 +5,7 @@ import action.impl.user.UserAddAction;
 import action.impl.user.UserDeleteAction;
 import action.impl.user.UserEditAction;
 import action.impl.user.UserListAction;
+import action.impl.user.UserListAllAction;
 import action.impl.user.UserSaveAction;
 
 public class UserActionFactory {
@@ -13,6 +14,10 @@ public class UserActionFactory {
 		
 		if(actionName.equalsIgnoreCase("list")) {
 			action = new UserListAction();
+		}
+		
+		if(actionName.equalsIgnoreCase("listAll")) {
+			action = new UserListAllAction();
 		}
 		
 		if(actionName.equalsIgnoreCase("add")) {

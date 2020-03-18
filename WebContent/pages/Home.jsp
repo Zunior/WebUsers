@@ -42,6 +42,7 @@
 	
 	<c:set value="${pageContext.request.contextPath}" var="contextPath"></c:set>
 	<c:url var="listUserURL" value="/application/user/list"/>
+	<c:url var="listAllUserURL" value="/application/user/listAll"/>
 	<c:url var="addUserURL" value="/application/user/add"/>
 	
 	<div class="flex-container">
@@ -52,7 +53,11 @@
 				</div>
 				<br />
 				<div>
-					<a href="<c:out value="${addUserURL}"/>">Novi user</a> 
+					<a href="<c:out value="${listAllUserURL}"/>">All users</a>
+				</div>
+				<br />
+				<div>
+					<a href="<c:out value="${addUserURL}"/>">New user</a> 
 				</div>
 		</div>
 	</div>

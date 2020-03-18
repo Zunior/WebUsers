@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Active users</title>
+<title>All users</title>
 <style type="text/css">
 	body{
 		margin: 0;
@@ -63,31 +63,31 @@
 								<th>Surname</th>  
 								<th>Name</th>
 								<th>Username</th>
-<!-- 								<th>Delete</th> -->
-<!-- 								<th>Edit</th>  -->
+								<th>Delete</th>
+								<th>Edit</th> 
 						    </tr>
 						</thead>
 							<tbody>
-								<c:forEach items="${activeUsers}" var="user">
+								<c:forEach items="${users}" var="user">
 								<tr>
 									<td><p>${user.getSurname()}</p><br/></td>
 									<td><p>${user.getName()}</p><br/></td>
 									<td><p>${user.getUsername()}</p><br/></td>
-<!-- 									<td> -->
-<%-- 										<form method="get" action="<c:out value="${getDelete}" />"> --%>
-<%-- 											<input type = "hidden" id="usernameUser" name = "usernameUser" value = "${user.getUsername()}" /> --%>
-<!-- 											<input type = "submit" value="delete"/> -->
-<!-- 										</form> -->
-<!-- 									</td> -->
-<!-- 									<td> -->
-<%-- 										<form method="get" action="<c:out value="${getEdit}" />"> --%>
-<%-- 											<input type = "hidden" id="surnameUser" name = "surnameUser" value = "${user.getSurname()}" /> --%>
-<%-- 											<input type = "hidden" id="nameUser" name = "nameUser" value = "${user.getName()}" /> --%>
-<%-- 											<input type = "hidden" id="usernameUser" name = "usernameUser" value = "${user.getUsername()}" /> --%>
-<%-- 											<input type = "hidden" id="passwordUser" name = "passwordUser" value = "${user.getPassword()}" /> --%>
-<!-- 											<input type = "submit" value="edit"/> -->
-<!-- 										</form> -->
-<!-- 									</td> -->
+									<td>
+										<form method="get" action="<c:out value="${getDelete}" />">
+											<input type = "hidden" id="usernameUser" name = "usernameUser" value = "${user.getUsername()}" />
+											<input type = "submit" value="delete"/>
+										</form>
+									</td>
+									<td>
+										<form method="get" action="<c:out value="${getEdit}" />">
+											<input type = "hidden" id="surnameUser" name = "surnameUser" value = "${user.getSurname()}" />
+											<input type = "hidden" id="nameUser" name = "nameUser" value = "${user.getName()}" />
+											<input type = "hidden" id="usernameUser" name = "usernameUser" value = "${user.getUsername()}" />
+											<input type = "hidden" id="passwordUser" name = "passwordUser" value = "${user.getPassword()}" />
+											<input type = "submit" value="edit"/>
+										</form>
+									</td>
 								</tr>
 								</c:forEach>
 							</tbody>

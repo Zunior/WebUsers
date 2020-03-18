@@ -9,6 +9,7 @@ public interface PageConstants {
 	public static final String PAGE_DELETE_USER = "../pages/ListUsers.jsp";
 	public static final String PAGE_EDIT_USER = "../pages/EditUser.jsp";
 	public static final String PAGE_LIST_USER = "/pages/ListUsers.jsp";
+	public static final String PAGE_LISTALL_USER = "/pages/ListAllUsers.jsp";
 	public static final String PAGE_HOME = "/pages/Home.jsp";
 	
 	

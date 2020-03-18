@@ -57,10 +57,16 @@
 	
 <%-- 	<c:url var="loginURL" value="${contextPath}/application/login"/> --%>
 
+	<c:url var="listAllUserURL" value="/application/user/listAll"/>
+
 	<div class="flex-container">
 		<div class="Login-form">
 <%-- 			<form method="get" action="<c:out value="${loginURL}"/>"> --%>
 			<form method="get" action="<%=url %>" >
+				<div>
+					<a href="<c:out value="${listAllUserURL}"/>">All users</a>
+				</div>
+				<br />
 				<div>
 					<label>Username:</label> 
 					<input id="usernameUser" name="usernameUser" type="text" />
