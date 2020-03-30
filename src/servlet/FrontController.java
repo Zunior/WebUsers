@@ -35,7 +35,6 @@ public class FrontController extends HttpServlet {
 		System.out.println("==================FrontControllerGet==========================");
 		System.out.println("path info: " + request.getPathInfo());
 		
-//		String errorMessage="";
 		ProcessRequest(request, response);
 		
 	}
@@ -47,7 +46,6 @@ public class FrontController extends HttpServlet {
 		System.out.println("==================FrontControllerPost==========================");
 		System.out.println("path info: " + request.getPathInfo());
 		
-//		String errorMessage="";
 		ProcessRequest(request, response);
 		
 	}

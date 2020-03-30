@@ -59,6 +59,8 @@
 				<div>
 					<a href="<c:out value="${addUserURL}"/>">New user</a> 
 				</div>
+				<br />
+				<c:out value="${loggedMessage}"></c:out>
 		</div>
 	</div>
 

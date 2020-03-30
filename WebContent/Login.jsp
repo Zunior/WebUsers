@@ -61,7 +61,7 @@
 
 	<div class="flex-container">
 		<div class="Login-form">
-<%-- 			<form method="get" action="<c:out value="${loginURL}"/>"> --%>
+<%-- 			<form method="post" action="<c:out value="${loginURL}"/>"> --%>
 			<form method="get" action="<%=url %>" >
 				<div>
 					<a href="<c:out value="${listAllUserURL}"/>">All users</a>
